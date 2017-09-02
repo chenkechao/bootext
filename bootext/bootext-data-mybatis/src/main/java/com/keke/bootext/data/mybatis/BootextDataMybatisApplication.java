@@ -16,14 +16,15 @@ public class BootextDataMybatisApplication {
 
 }
 
-@RepositoryRestResource(excerptProjection = UserDataProjection.class)
+//@RepositoryRestResource(excerptProjection = UserDataProjection.class)
+@Entity
 interface ReservationRepository extends MybatisRepository<UserData, Long> {
 }
 
-@Projection(name = "userDataProjection", types = {UserData.class})
-interface UserDataProjection {
-    String getName();
-}
+//@Projection(name = "userDataProjection", types = {UserData.class})
+//interface UserDataProjection {
+//    String getName();
+//}
 
 @Entity
 class UserData extends LongId {

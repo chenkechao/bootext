@@ -7,8 +7,6 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.mybatis.annotations.Entity;
 import org.springframework.data.mybatis.domains.LongId;
 import org.springframework.data.mybatis.repository.support.MybatisRepository;
-import org.springframework.data.rest.core.annotation.RepositoryRestResource;
-import org.springframework.data.rest.core.config.Projection;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import java.util.Random;
