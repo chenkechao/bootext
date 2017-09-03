@@ -12,6 +12,7 @@
         <module>bootext-mybatis</module>
         <module>bootext-data-mybatis</module>
         <module>bootext-dubbo</module>
+        <module>bootext-rocketmq</module>
     </modules>
     <packaging>pom</packaging>
 
