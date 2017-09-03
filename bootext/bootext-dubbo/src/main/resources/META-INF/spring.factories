@@ -1,1 +1,4 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=com.keke.bootext.dubbo.configuration.DubboAutoConfiguration
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.keke.bootext.dubbo.config.DubboAutoConfiguration,\
+com.keke.bootext.dubbo.config.DubboProviderAutoConfiguration,\
+com.keke.bootext.dubbo.config.DubboConsumerAutoConfiguration

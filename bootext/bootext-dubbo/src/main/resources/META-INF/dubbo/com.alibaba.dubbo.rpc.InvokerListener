@@ -1,0 +1,1 @@
+dubbosubscribe=com.keke.bootext.dubbo.listener.ConsumerSubscribeListener

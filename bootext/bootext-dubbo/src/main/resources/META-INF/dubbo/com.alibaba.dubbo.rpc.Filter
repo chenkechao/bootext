@@ -1,0 +1,2 @@
+dubboconsumerstatics=com.keke.bootext.dubbo.listener.ConsumerInvokeStaticsFilter
+dubboproviderstatics=com.keke.bootext.dubbo.listener.ProviderInvokeStaticsFilter
