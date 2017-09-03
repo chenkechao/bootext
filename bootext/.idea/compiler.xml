@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="bootext-data-mybatis" />
+        <module name="bootext-dubbo" />
+        <module name="bootext-mybatis" />
+        <module name="bootext-rocketmq" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="bootext" target="1.6" />
+      <module name="bootext-data-mybatis" target="1.8" />
+      <module name="bootext-dubbo" target="1.8" />
+      <module name="bootext-mybatis" target="1.8" />
+      <module name="bootext-parent" target="1.8" />
+      <module name="bootext-rocketmq" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
