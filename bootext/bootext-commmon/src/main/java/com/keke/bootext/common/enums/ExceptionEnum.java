@@ -2,7 +2,8 @@ package com.keke.bootext.common.enums;
 
 public enum ExceptionEnum implements ErrorCode {
 
-    HTTP_UNKNOWN_ERROR("001","http错误");
+    PARAMETER_EXCEPTION("001","{0}参数异常,参数列表:{1}"),
+    HTTP_UNKNOWN_ERROR("002","http错误");
 
     private String code;
     private String message;
