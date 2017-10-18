@@ -22,5 +22,19 @@ public enum ExceptionEnum implements ErrorCode {
         return message;
     }
 
+    /**
+     * 根据code获取message
+     * @param code
+     * @return
+     */
+    public static String getMessage(String code){
+        for(ExceptionEnum exceptionEnum:ExceptionEnum.values()){
+            if(exceptionEnum.getCode().equals(code)){
+                return exceptionEnum.getMessage();
+            }
+        }
+        return null;
+    }
+
 
 }
