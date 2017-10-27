@@ -50,9 +50,21 @@ public class DubboConsumerAutoConfiguration {
     @Autowired
     private RegistryConfig registryConfig;
 
+    /**
+     * BeanPostProcessor提供了两个方法：
+     * postProcessBeforeInitialization和postProcessAfterInitialization，主要针对bean初始化提供扩展
+     * @return
+     */
     @Bean
     public BeanPostProcessor beanPostProcessor() {
         return new BeanPostProcessor() {
+            /**
+             *postProcessBeforeInitialization会在每一个bean实例化之后、初始化（如afterPropertiesSet方法）之前被调用
+             * @param bean
+             * @param beanName
+             * @return
+             * @throws BeansException
+             */
             @Override
             public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
                 Class<?> objClz = bean.getClass();
@@ -100,6 +112,13 @@ public class DubboConsumerAutoConfiguration {
                 return bean;
             }
 
+            /**
+             * postProcessAfterInitialization则在每一个bean初始化之后被调用
+             * @param bean
+             * @param beanName
+             * @return
+             * @throws BeansException
+             */
             @Override
             public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
                 return bean;
